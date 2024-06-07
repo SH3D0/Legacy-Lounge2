@@ -1,0 +1,240 @@
+/* styles.css */
+
+/* Define the theme color */
+:root {
+  --theme-color: rgba(90, 255, 96, 0.9); /* Semi-transparent background for navbar */
+  --text-color: rgb(18, 77, 13); /* Text color for the navbar */
+}
+
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('pexels-ella-olsson-572949-3026808.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Cover the entire viewport */
+  color: rgb(99, 254, 125); /* Default text color for better contrast */
+}
+
+/* Navigation Bar Container */
+nav {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--theme-color); /* Semi-transparent background for the navbar */
+  padding: 10px 15px;
+  width: 98%;
+  position: relative; /* Fixed position at the top */
+  z-index: 10; /* Keep it above other elements */
+}
+
+/* Logo Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--theme-color); /* Semi-transparent background for the navbar */
+  padding: 10px 15px;
+  width: 98%;
+  position: fixed;
+  top: 0; /* Ensure it stays on top of the background image */
+  z-index: 10; /* Keep it above other elements */
+}
+
+/* Logo Styles */
+nav .logo {
+  color: var(--text-color); /* Set text color for the restaurant name */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal layout */
+}
+
+/* List Item Styles */
+nav ul li {
+  display: inline;
+}
+
+/* Link Styles */
+nav ul li a {
+  display: block;
+  color: var(--text-color); /* Set link text color */
+  text-align: center;
+  padding: 10px 15px; /* Adjust padding for links */
+  text-decoration: none;
+  font-family:monospace;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(79, 79, 79, 0.221); /* Change hover color */
+}
+
+/* Content Alignment */
+h1, p {
+  margin-left: 15px; /* Align content with the navigation */
+  color: rgb(255, 255, 255); /* Ensure text is readable against background image */
+  
+}
+
+img {
+  margin-left: 15px; /* Align content with the navigation */
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  margin-left: 15px; /* Align content with the navigation */
+  margin-bottom: 10px;
+  color: #067aff; /* Default link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3072ff; /* Change link color on hover */
+}
+
+/* Contact Section Styles */
+.contact-section {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 20px 0;
+}
+
+.contact-info a {
+  color: #1cb0ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #348cff;
+}
+/* Contact Section Styles */
+.contact-section {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #2b80ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #1890ff;
+}
+
+/* Contact Form Styles */
+.contact-section {
+  margin-bottom: 5px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent section background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for form */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(40% - 30px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form input {
+  height: 30px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .radio-group,
+.contact-form .checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start (left) */
+  margin-bottom: 5px;
+}
+
+/* Align radio buttons and checkboxes to the left */
+.contact-form .radio-group label,
+.contact-form .checkbox-group label {
+  margin-right: -50px; /* Adjust space between input and label */
+  margin-bottom: 0; /* Ensure labels are aligned with inputs */
+}
+
+.contact-form .radio-group input,
+.contact-form .checkbox-group input {
+  margin-right: -50px;
+  margin-bottom: 0; /* Ensure inputs are aligned with labels */
+}
+
+.contact-form button {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.contact-form button:hover {
+  background-color: rgba(85, 85, 85, 0.804);
+}
+
+/* Additional adjustments for the form layout */
+.contact-form .form-buttons {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.contact-section {
+  margin-bottom: 5px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent section background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for form */
+}
+/* Contact Image Styles */
+.contact-section img {
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border-radius for a smoother look */
+}

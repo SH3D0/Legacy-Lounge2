@@ -1,0 +1,154 @@
+/* styles.css */
+
+/* Define the theme color */
+:root {
+  --theme-color: rgba(90, 255, 96, 0.9); /* Semi-transparent background for navbar */
+  --text-color: rgb(18, 77, 13); /* Text color for the navbar */
+}
+
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('pexels-ella-olsson-572949-3026808.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Cover the entire viewport */
+  color: white; /* Default text color for better contrast */
+}
+
+/* Navigation Bar Container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--theme-color); /* Semi-transparent background for the navbar */
+  padding: 10px 15px;
+  width: 98%;
+  position: relative; /* Ensure it stays on top of the background image */
+  z-index: 10; /* Keep it above other elements */
+}
+/* Logo Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--theme-color); /* Semi-transparent background for the navbar */
+  padding: 10px 15px;
+  width: 98%;
+  position: fixed;
+  top: 0; /* Ensure it stays on top of the background image */
+  z-index: 10; /* Keep it above other elements */
+}
+/* Logo Styles */
+nav .logo {
+  color: var(--text-color); /* Set text color for the restaurant name */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal layout */
+}
+
+/* List Item Styles */
+nav ul li {
+  display: inline;
+}
+
+/* Link Styles */
+nav ul li a {
+  display: block;
+  color: var(--text-color); /* Set link text color */
+  text-align: center;
+  padding: 10px 15px; /* Adjust padding for links */
+  text-decoration: none;
+  font-family:monospace;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(79, 79, 79, 0.221); /* Change hover color */
+}
+
+/* Content Alignment */
+h1, h2, h3, p, ul {
+  margin-left: 15px; /* Align content with the navigation */
+  color: white; /* Ensure text is readable against background image */
+  
+}
+
+h2, h3 {
+  margin-top: 20px; /* Add some space above headings */
+}
+
+ul {
+  padding-left: 20px; /* Add padding to list items */
+}
+
+a {
+  display: block;
+  margin-left: 30px; /* Align content with the navigation */
+  margin-bottom: 10px;
+  color: #117cff; /* Default link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3679ff; /* Change link color on hover */
+}
+
+/* Gallery Section Styles */
+.gallery-section {
+  margin: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent section background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for section */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border-radius for a smoother look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for images */
+}
+
+/* Menu Section Styles */
+.menu-section {
+  margin: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent section background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for section */
+}
+
+.menu-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-section th,
+.menu-section td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-section th {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent header background */
+}
+
+.menu-section tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Row hover effect */
+}
